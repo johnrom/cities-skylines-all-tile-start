@@ -31,7 +31,10 @@ namespace AllTileStartMod {
 		public override bool OnCanUnlockArea(int x, int z, bool originalResult) {
 
 			if ( MilestonesExtension.Instance == null || ! MilestonesExtension.Instance.unlockedAreas) {
-				originalResult = true;
+
+				if (! GameAreaManager.instance.IsUnlocked(x, z) ) {
+					originalResult = true;
+				}
 			}
 
 			return originalResult;
@@ -114,7 +117,26 @@ namespace AllTileStartMod {
 			if ( mode.Equals( ICities.LoadMode.NewGame ) ) {
 				// update terrain data so that the game knows to print detailed versions of each tile instead of the basic "locked" versions
 				// when unlocking tiles before the game is loaded, it skips this step since the game hasn't rendered yet
-				TerrainManager.instance.UpdateData( Singleton<SimulationManager>.instance.m_metaData.m_updateMode );
+
+				// unlock all tiles
+				int rows = (int)Math.Sqrt (managers.areas.maxAreaCount);
+
+				for (int x = 0; x < rows; x++) {
+
+					for (int z = 0; z < rows; z++) {
+						int column = x;
+						int row = z;
+
+						if (rows.Equals (3)) {
+							column = x + 1;
+							row = z + 1;
+						}
+							
+						int skip = 2;
+						int num = 120;
+						TerrainModify.UpdateArea( ( x + skip ) * num - 4, ( z + skip ) * num - 4, ( ( x + skip ) + 1) * num + 4, ( ( z + skip ) + 1) * num + 4, true, true, true);
+					}         
+				}
             }
 		}
 	}
