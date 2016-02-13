@@ -118,8 +118,8 @@ namespace AllTileStartMod {
 				// update terrain data so that the game knows to print detailed versions of each tile instead of the basic "locked" versions
 				// when unlocking tiles before the game is loaded, it skips this step since the game hasn't rendered yet
 
-				// unlock all tiles
-				int rows = (int)Math.Sqrt (managers.areas.maxAreaCount);
+				// refresh all tiles, even those which weren't unlocked
+				int rows = 5;
 
 				for (int x = 0; x < rows; x++) {
 
