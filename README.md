@@ -2,7 +2,7 @@
 
 Extremely simple mod for `Cities: Skylines` to unlock all available tiles at start of a new game. This won't unlock all the tiles when a previous game is loaded. This mod unlocks the tiles without affecting money or milestones.
 
-Works best with "All Spaces Unlockable" 25 tiles mod by S. Klyte, at which point it will unlock all 5x5 tiles. Without "All Spaces Unlockable", this mod will unlock the central 9 tiles. I don't currently have any plans to make this mod work with the 81 tiles mod. Please contact the mod author for that functionality.
+Works best with "All Spaces Unlockable" 25 tiles mod by S. Klyte, at which point it will unlock all 5x5 tiles. Without "All Spaces Unlockable", this mod will unlock the central 9 tiles. I don't currently have any plans to make this mod work with the 81 tiles mod -- this ability already exists within that mod.
 
 Enjoy!
 
