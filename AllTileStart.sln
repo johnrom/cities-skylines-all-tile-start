@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1758
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTileStart", "AllTileStart\AllTileStart.csproj", "{CE41123E-18D9-4A32-9091-6F2AC3CED632}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTileStart.Mod", "AllTileStart.Mod\AllTileStart.Mod.csproj", "{CE41123E-18D9-4A32-9091-6F2AC3CED632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTileStart.Library", "AllTileStart.Library\AllTileStart.Library.csproj", "{4C07A9DA-CBE4-4156-A423-C864E3CD50E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +17,16 @@ Global
 		{CE41123E-18D9-4A32-9091-6F2AC3CED632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE41123E-18D9-4A32-9091-6F2AC3CED632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE41123E-18D9-4A32-9091-6F2AC3CED632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C07A9DA-CBE4-4156-A423-C864E3CD50E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C07A9DA-CBE4-4156-A423-C864E3CD50E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C07A9DA-CBE4-4156-A423-C864E3CD50E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C07A9DA-CBE4-4156-A423-C864E3CD50E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {567B3A38-0D38-4B03-91FC-9D8EE21E1781}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
